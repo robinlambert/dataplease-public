@@ -15,6 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -43,6 +44,7 @@
             <ul class="nav navbar-nav navbar-right">
               <li><a href="index.php">Accueil</a></li>
               <li><a href="http://datapleasedoc.herokuapp.com/dataplease">Documentation</a></li>
+              <li><a href="https://twitter.com/dataplease">Support</a></li>
               <li><a href="apropos.php">À propos</a></li>
             </ul>
           </div><!--/.nav-collapse -->

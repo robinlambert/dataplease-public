@@ -413,10 +413,9 @@ p {
 }
 
 .lead {
-  margin-bottom: 20px;
   font-size: 16.099999999999998px;
   font-weight: 200;
-  line-height: 1.4;
+  line-height: 2.45;
 }
 
 @media (min-width: 768px) {
@@ -583,7 +582,7 @@ h6,
 
 .page-header {
   padding-bottom: 9px;
-  margin: 40px 0 20px;
+  margin: 40px 0 0px;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -776,6 +775,7 @@ pre code {
 }
 
 .container {
+  width: 70%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -2011,10 +2011,10 @@ textarea.input-lg {
 
 .btn {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 10px 30px;
   margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
+  font-size: 15px;
+  font-weight: lighter;
   line-height: 1.428571429;
   text-align: center;
   white-space: nowrap;
@@ -2022,6 +2022,7 @@ textarea.input-lg {
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
+  border-radius: 5px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -4812,12 +4813,15 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron {
-  padding: 30px;
+  padding: 20px;
   margin-bottom: 30px;
-  font-size: 21px;
+  margin: 0 auto;
+  margin-top: 90px;
+  font-size: 20px;.
   font-weight: 200;
-  line-height: 2.1428571435;
+  line-height: 2;
   color: inherit;
+  border-radius: 5px;
   background-color: #eeeeee;
 }
 
@@ -4827,20 +4831,25 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron p {
-  line-height: 1.4;
+  line-height: 2;
+}
+
+.jumbotron a {
+  font-size: 20px;
+  padding: 15px 30px;
 }
 
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 10px;
+    padding-bottom: 40px;
   }
   .container .jumbotron {
     padding-right: 60px;
     padding-left: 60px;
   }
   .jumbotron h1 {
-    font-size: 63px;
+    font-size: 36px;
   }
 }
 
@@ -4850,6 +4859,8 @@ a.list-group-item.active > .badge,
   height: auto;
   max-width: 100%;
   padding: 4px;
+  margin-top: 30px;
+  border-radius: 5px;
   margin-bottom: 20px;
   line-height: 1.428571429;
   background-color: #ffffff;
