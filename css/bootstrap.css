@@ -74,7 +74,7 @@ body {
 
 a {
   background: transparent;
-}
+  -webkit-transition: all .5s ease-in-out;}
 
 a:focus {
   outline: thin dotted;
@@ -583,7 +583,6 @@ h6,
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 0px;
-  border-bottom: 1px solid #eeeeee;
 }
 
 ul,
@@ -2104,6 +2103,7 @@ fieldset[disabled] .btn-default.active {
   color: #ffffff;
   background-color: #428bca;
   border-color: #357ebd;
+  padding: 1em 1.6em;
 }
 
 .btn-primary:hover,
@@ -4036,7 +4036,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding-right: 15px;
   padding-left: 15px;
   overflow-x: visible;
-  border-top: 1px solid transparent;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -4062,6 +4061,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-collapse.in {
   overflow-y: auto;
+  background-color: #fff;
+  text-align: center;
+    border: 1px solid transparent;
 }
 
 @media (min-width: 768px) {

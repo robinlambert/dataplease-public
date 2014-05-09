@@ -1,9 +1,123 @@
-p.about {
-  font-size: 16px;
-  font-weight: 200;
-  line-height: 2.45;
+* { box-sizing: border-box; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+
+body { font-family: 'Open Sans'; }
+
+.container { padding: 0; }
+
+#wrap {
+	  -webkit-animation: fadein 1s; /* Safari and Chrome */
+      -moz-animation: fadein 1s; /* Firefox */
+       -ms-animation: fadein 1s; /* Internet Explorer */
+        -o-animation: fadein 1s; /* Opera */
+          animation: fadein 1s;
 }
 
-h2.accueil {
-	margin-top: 40px;
+.ha-header-hide {
+    -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
 }
+
+.ha-header-show {
+    -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+        transform: translateY(0%);
+}
+
+/* ==============================================================================
+    NAV
+  ============================================================================== */
+
+.menu { height: 4.75em; padding-top: .5em; background-color: white; border-top: 2px solid #357EAD; color: #3276b1; }
+.menu a.navbar-brand { color: #3276b1; }
+
+ul.nav.navbar-nav.navbar-right li:last-child a.documentation { margin-left: 1.8em; padding: .8em 1.6em; background-color: transparent; font-weight: 400; color: #357EAD; }
+ul.nav.navbar-nav.navbar-right li:last-child a.documentation:hover { background-color: #357EAD; color: #fff; }
+
+.navbar-collapse.in {background-color: #fff; }
+
+/* ==============================================================================
+    FIRST SECTION
+  ============================================================================== */
+
+section.first { margin-top: 6em; margin-bottom: 6em; text-align: center; }
+
+.first .page-header .row > h1 { font-family: 'Source Sans Pro'; font-size: 4.5em; font-weight: 300; color: #357EAD; }
+.first .page-header .row .col-centered { float: none; margin: 0 auto; margin-top: 1.4em; line-height: 1.8em; font-family: 'Source Sans Pro'; font-size: 1.3em; font-weight: 300; color: #363636;}
+
+.first .row a.start { padding: 24px 54px; margin-top: 2.4em; font-size: 1.3em; font-weight: 400; font-family: 'Source Sans Pro'; }
+
+/* ==============================================================================
+    IFRAME
+  ============================================================================== */
+
+  iframe { margin-bottom: 6em; height: 44em; width: 100% }
+
+
+/* ==============================================================================
+    FEATURES
+  ============================================================================== */
+
+.features { padding: 60px 0 60px 0; background-color: #f7f7f7; border-top: 1px solid #e7e7e7; }
+
+h4 { font-family: 'Source Sans Pro'; font-size: 1.5em; font-weight: 300; color: #000; }
+
+.features .container .row:first-child { margin-bottom: 1.8em; }
+.features .container .row:last-child { text-align: center; }
+
+.features .container .row p { color: #999; font-weight: 300; }
+
+.features .container .row > a.push { margin-top: 4em; background-color: transparent; border: 1px solid #999; color: #999; font-weight: 400; }
+.features .container .row > a.push:hover { background-color: #e7e7e7; }
+
+/* ==============================================================================
+    REUSES
+  ============================================================================== */
+
+.reuse { height: 25em; background: url(../img/bg-reuse.png) no-repeat center; background-clip: content-box; text-align: center; }
+
+.reuse .container .row > p { margin-top: 5em; line-height: 1.8em; color: #fff; font-size: 1.3em; font-weight: 300; font-family: 'Source Sans Pro'; }
+.reuse .container .row > a { margin-top: 1.8em; color: #fff; border: 1px solid #fff; background-color: transparent; font-weight: 400; }
+.reuse .container .row > a:hover { background-color: #fff; color: #999; }
+
+/* ==============================================================================
+    FOOTER
+  ============================================================================== */
+
+footer .container .row { padding: 1em 0 1em 0; color: }
+footer .container .row ul.nav.navbar-nav.navbar-right li a { color: #999; font-weight: 200; }
+footer .container .row p.credits { float:left; padding-top: 15px; line-height: 20px; margin-bottom: 0; font-size: 1em; color: #999; font-weight: 200;}
+
+/* ==============================================================================
+    ABOUT
+  ============================================================================== */
+
+p.about { font-size: 16px; font-weight: 300; line-height: 2.45; }
+h2.accueil { margin-top: 40px; }
+
+/* ==============================================================================
+    KEYFRAMES
+  ============================================================================== */
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
